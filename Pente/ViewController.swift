@@ -10,6 +10,9 @@ import UIKit
 class ViewController: UIViewController {
 
     override func viewDidLoad() {
+     print ("hello")
+    
+        
         super.viewDidLoad()
         // Do any additional setup after loading the view.
         //test change for commit
