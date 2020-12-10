@@ -27,7 +27,7 @@ extension FrenchViewController: UITableViewDelegate, UITableViewDataSource{
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "frenchCell", for: indexPath)
+        let cell = tableView.dequeueReusableCell(withIdentifier: "frenchVideoCell", for: indexPath)
         cell.textLabel?.text = frenchMediaArray[indexPath.row]
         return cell
     }
