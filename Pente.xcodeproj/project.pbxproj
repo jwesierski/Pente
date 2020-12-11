@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		8888361225801F8D0039031E /* FrenchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8888361125801F8D0039031E /* FrenchViewController.swift */; };
+		88EE376E2582EBC700FC02B5 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88EE376D2582EBC700FC02B5 /* ContentView.swift */; };
 		88F7F2C9255B3CDF00366FF0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88F7F2C8255B3CDF00366FF0 /* AppDelegate.swift */; };
 		88F7F2CB255B3CDF00366FF0 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88F7F2CA255B3CDF00366FF0 /* SceneDelegate.swift */; };
 		88F7F2CD255B3CDF00366FF0 /* LanguageListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88F7F2CC255B3CDF00366FF0 /* LanguageListViewController.swift */; };
@@ -37,6 +38,7 @@
 
 /* Begin PBXFileReference section */
 		8888361125801F8D0039031E /* FrenchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FrenchViewController.swift; sourceTree = "<group>"; };
+		88EE376D2582EBC700FC02B5 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		88F7F2C5255B3CDF00366FF0 /* Pente.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Pente.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		88F7F2C8255B3CDF00366FF0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		88F7F2CA255B3CDF00366FF0 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -104,6 +106,7 @@
 				88F7F2C8255B3CDF00366FF0 /* AppDelegate.swift */,
 				88F7F2CA255B3CDF00366FF0 /* SceneDelegate.swift */,
 				88F7F2CC255B3CDF00366FF0 /* LanguageListViewController.swift */,
+				88EE376D2582EBC700FC02B5 /* ContentView.swift */,
 				8888361125801F8D0039031E /* FrenchViewController.swift */,
 				88F7F2CE255B3CDF00366FF0 /* Main.storyboard */,
 				88F7F2D1255B3CE700366FF0 /* Assets.xcassets */,
@@ -262,6 +265,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				88F7F2CD255B3CDF00366FF0 /* LanguageListViewController.swift in Sources */,
+				88EE376E2582EBC700FC02B5 /* ContentView.swift in Sources */,
 				88F7F2C9255B3CDF00366FF0 /* AppDelegate.swift in Sources */,
 				8888361225801F8D0039031E /* FrenchViewController.swift in Sources */,
 				88F7F2CB255B3CDF00366FF0 /* SceneDelegate.swift in Sources */,
