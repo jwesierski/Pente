@@ -12,14 +12,15 @@ import AVKit
 class TableViewController: UITableViewController {
     
     @IBOutlet weak var scrollView: UIScrollView!
-    @IBOutlet weak var hitBtn: UIButton!
     
-    
-    func hitBtn(_sender: Any) {
-        UIView.animate(withDuration: 10, animations: {
+    @IBAction func hitBtn(_ sender: Any) {
+        UIScrollView.animate(withDuration: 10, animations: {
         self.scrollView.contentOffset = CGPoint(x: 0, y: 1000) })
-}
+    }
+    
+    
 
+/*
     struct ContentView: View {
         var body: some View {
             VStack {
@@ -66,7 +67,7 @@ class TableViewController: UITableViewController {
         // #warning Incomplete implementation, return the number of rows
         return 0
     }
-
+*/
     /*
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "reuseIdentifier", for: indexPath)
