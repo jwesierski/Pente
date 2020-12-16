@@ -1,0 +1,21 @@
+{
+  "images" : [
+    {
+      "filename" : "world-language-foreign-language-english-learn-more-2d14b84c04503213f6a221ca296bf60e.png",
+      "idiom" : "universal",
+      "scale" : "1x"
+    },
+    {
+      "idiom" : "universal",
+      "scale" : "2x"
+    },
+    {
+      "idiom" : "universal",
+      "scale" : "3x"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}
