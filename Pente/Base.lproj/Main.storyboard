@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17506" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Mqp-5l-oxW">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Mqp-5l-oxW">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17505"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17125"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -157,7 +157,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="La Vie En Rose" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nid-tg-8SN">
-                                <rect key="frame" x="109" y="45" width="197" height="37"/>
+                                <rect key="frame" x="109" y="71" width="197" height="37"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="31"/>
                                 <color key="textColor" systemColor="systemBackgroundColor"/>
@@ -171,59 +171,53 @@
                                 <rect key="frame" x="314" y="12" width="86" height="103"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="3ve-sp-2u8">
-                                <rect key="frame" x="40" y="593" width="334" height="215"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <viewLayoutGuide key="contentLayoutGuide" id="2qf-Vt-9tt"/>
-                                <viewLayoutGuide key="frameLayoutGuide" id="in4-r6-HAY"/>
-                            </scrollView>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" scrollEnabled="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZBL-Wd-R2g">
-                                <rect key="frame" x="40" y="148" width="334" height="391"/>
+                                <rect key="frame" x="40" y="365" width="334" height="396"/>
                                 <subviews>
-                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" editable="NO" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gDB-6F-Ahn" userLabel="French Lyrics">
-                                        <rect key="frame" x="0.0" y="-986" width="334" height="1377"/>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" scrollEnabled="NO" editable="NO" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gDB-6F-Ahn" userLabel="French Lyrics">
+                                        <rect key="frame" x="0.0" y="-986" width="334" height="1310"/>
                                         <color key="backgroundColor" red="1" green="0.49327188729999999" blue="0.47399842739999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                        <string key="text">Des yeux qui font baisser les miens
+                                        <mutableString key="text">Des yeux qui font baisser les miens
 Un rire qui se perd sur sa bouche
 Voilà le portrait sans retouches
-De l'homme auquel j'appartiens
+De l'homme auquel j'appartiens 
 Quand il me prend dans ses bras
 Il me parle tout bas
 Je vois la vie en rose
 Il me dit des mots d'amour
 Des mots de tous les jours
-Et ça me fait quelque chose
+Et ça me fait quelque chose 
 Il est entré dans mon cœur
 Une part de bonheur
-Dont je connais la cause
+Dont je connais la cause 
 C'est lui pour moi, moi pour lui dans la vie
-Il me l'a dit, l'a juré pour la vie
+Il me l'a dit, l'a juré pour la vie 
 Et dès que je l'aperçois
 Alors je sens en moi
-Mon cœur qui bat
+Mon cœur qui bat 
 Des nuits d'amour à plus finir
 Un grand bonheur qui prend sa place
 Des ennuis, des chagrins s'effacent
-Heureux, heureux à en mourir
+Heureux, heureux à en mourir 
 Quand il me prend dans ses bras
 Il me parle tout bas
-Je vois la vie en rose
+Je vois la vie en rose 
 Il me dit des mots d'amour
 Des mots de tous les jours
-Et ça me fait quelque chose
+Et ça me fait quelque chose 
 Il est entré dans mon cœur
 Une part de bonheur
-Dont je connais la cause
+Dont je connais la cause 
 C'est toi pour moi, moi pour toi dans la vie
-Il me l'a dit, l'a juré pour la vie
+Il me l'a dit, l'a juré pour la vie 
 Et dès que je t'aperçois
 Alors je sens dans moi
 Mon cœur qui bat
 La la, la la, la la
 La la, la la, ah la
-La la la la</string>
+La la la la</mutableString>
                                         <color key="textColor" systemColor="systemGroupedBackgroundColor"/>
-                                        <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="20"/>
+                                        <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="21"/>
                                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                     </textView>
                                     <button opaque="NO" multipleTouchEnabled="YES" alpha="0.94999999999999996" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HIB-ux-gBe">
@@ -253,6 +247,44 @@ La la la la</string>
                                 <viewLayoutGuide key="contentLayoutGuide" id="7mh-Wq-nou"/>
                                 <viewLayoutGuide key="frameLayoutGuide" id="poP-25-VZe"/>
                             </scrollView>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="3ve-sp-2u8">
+                                <rect key="frame" x="20" y="123" width="374" height="210"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" editable="NO" text="In the first verse, which two body parts are mentioned?" textAlignment="center" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DdG-Dz-VBU">
+                                        <rect key="frame" x="8" y="0.0" width="356" height="53"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <color key="textColor" systemColor="labelColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                    </textView>
+                                    <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Le deux parties du corps sont.." textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="gXk-a0-7mi">
+                                        <rect key="frame" x="8" y="52" width="356" height="34"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                </subviews>
+                                <viewLayoutGuide key="contentLayoutGuide" id="2qf-Vt-9tt"/>
+                                <viewLayoutGuide key="frameLayoutGuide" id="in4-r6-HAY"/>
+                            </scrollView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Test your fluency with" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yqK-DB-qjB">
+                                <rect key="frame" x="124" y="42" width="167" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="tintColor" red="0.91332883880000004" green="0.58758811909999997" blue="0.46531971900000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.88654029187817263" green="0.0" blue="0.066263065344338512" alpha="0.84705882352941175" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FJp-ai-7Aj">
+                                <rect key="frame" x="143" y="769" width="129" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Check my answers"/>
+                                <connections>
+                                    <segue destination="SyU-Qm-fZz" kind="show" id="i9Y-xN-wDn"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="Abh-hf-Hu1"/>
                         <color key="backgroundColor" red="1" green="0.49327188729999999" blue="0.47399842739999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -348,10 +380,208 @@ La la la la</string>
             </objects>
             <point key="canvasLocation" x="-1082.4000000000001" y="-99.400299850074973"/>
         </scene>
+        <!--La vie en rose-->
+        <scene sceneID="gOV-Ic-iX8">
+            <objects>
+                <viewController title="La vie en rose" id="SyU-Qm-fZz" customClass="songWordsViewController" customModule="Pente" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="b1v-sy-Xc2">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="La Vie En Rose" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ixC-4v-aww">
+                                <rect key="frame" x="109" y="71" width="197" height="37"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="31"/>
+                                <color key="textColor" systemColor="systemBackgroundColor"/>
+                                <color key="highlightedColor" systemColor="systemBackgroundColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="NicePng_flower-emoji-png_498606" translatesAutoresizingMaskIntoConstraints="NO" id="osC-Mc-je9">
+                                <rect key="frame" x="15" y="12" width="86" height="103"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="NicePng_flower-emoji-png_498606" translatesAutoresizingMaskIntoConstraints="NO" id="Wyr-fj-LRH">
+                                <rect key="frame" x="314" y="12" width="86" height="103"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" scrollEnabled="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UCq-Td-FDj">
+                                <rect key="frame" x="40" y="363" width="334" height="391"/>
+                                <subviews>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="Y8m-Ba-Fsh">
+                                        <rect key="frame" x="8" y="8" width="326" height="383"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <mutableString key="text">Eyes that make mine lower
+Des yeux qui font baisser les miens
+
+A laugh that is lost on his mouth
+Un rire qui se perd sur sa bouche
+
+Here is the portrait without retouching
+Voilà le portrait sans retouches
+
+From the man I belong to
+De l'homme auquel j'appartiens
+When he takes me in his arms
+Quand il me prend dans ses bras
+
+He whispers to me
+Il me parle tout bas
+
+I see life in pink
+Je vois la vie en rose
+He tell me love words
+Il me dit des mots d'amour
+
+Everyday words
+Des mots de tous les jours
+
+And it does something to me
+Et ça me fait quelque chose
+He has entered in my heart
+Il est entré dans mon cœur
+
+A slice of happiness
+Une part de bonheur
+
+That I know the reason
+Dont je connais la cause
+It's him for me, me for him in life
+C'est lui pour moi, moi pour lui dans la vie
+
+He told me, swore it for life
+Il me l'a dit, l'a juré pour la vie
+And as soon as I see him
+Et dès que je l'aperçois
+
+So I feel Inside me
+Alors je sens en moi
+
+My heart beating
+Mon cœur qui bat
+Nights of endless love
+Des nuits d'amour à plus finir
+
+A great happiness that takes its place
+Un grand bonheur qui prend sa place
+
+Troubles, sorrows disappear
+Des ennuis, des chagrins s'effacent
+
+Happy, happy to die
+Heureux, heureux à en mourir
+When he takes me in his arms
+Quand il me prend dans ses bras
+
+He whispers to me
+Il me parle tout bas
+
+I see life in pink
+Je vois la vie en rose
+He tell me love words
+Il me dit des mots d'amour
+
+Everyday words
+Des mots de tous les jours
+
+And it does something to me
+Et ça me fait quelque chose
+He has entered in my heart
+Il est entré dans mon cœur
+
+A slice of happiness
+Une part de bonheur
+
+That I know the reason
+Dont je connais la cause
+It's you for me, me for you in life
+C'est toi pour moi, moi pour toi dans la vie
+
+He told me, swore it for life
+Il me l'a dit, l'a juré pour la vie
+And as soon as I see you
+Et dès que je t'aperçois
+
+So I feel inside me
+Alors je sens dans moi
+
+My heart beating
+Mon cœur qui bat
+
+La la, la la, la la
+La la, la la, la la
+
+La la, la la, ah la
+La la, la la, ah la
+
+La la la la
+La la la la</mutableString>
+                                        <color key="textColor" systemColor="labelColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                    </textView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="334" id="Ald-m5-dAS"/>
+                                    <constraint firstAttribute="height" constant="391" id="Gil-kZ-WGt"/>
+                                </constraints>
+                                <viewLayoutGuide key="contentLayoutGuide" id="mJP-Pw-Dqo"/>
+                                <viewLayoutGuide key="frameLayoutGuide" id="NKu-HR-PiZ"/>
+                            </scrollView>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="fNz-9K-2HU">
+                                <rect key="frame" x="20" y="123" width="374" height="239"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" editable="NO" text="In the first verse, which two body parts are mentioned?" textAlignment="center" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lTt-a0-Hwx">
+                                        <rect key="frame" x="8" y="0.0" width="356" height="53"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <color key="textColor" systemColor="labelColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                    </textView>
+                                    <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Le deux parties du corps sont.." textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="iS1-1f-bXd">
+                                        <rect key="frame" x="8" y="52" width="356" height="34"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                </subviews>
+                                <viewLayoutGuide key="contentLayoutGuide" id="oKx-wf-Pve"/>
+                                <viewLayoutGuide key="frameLayoutGuide" id="L4C-Lt-krJ"/>
+                            </scrollView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Test your fluency with" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Nw3-s8-B2k">
+                                <rect key="frame" x="124" y="42" width="167" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="tintColor" red="0.91332883880000004" green="0.58758811909999997" blue="0.46531971900000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.88654029190000005" green="0.0" blue="0.066263065339999996" alpha="0.84705882349999995" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="HrT-Kn-Qg9"/>
+                        <color key="backgroundColor" red="1" green="0.49327188729999999" blue="0.47399842739999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="UCq-Td-FDj" firstAttribute="trailing" secondItem="b1v-sy-Xc2" secondAttribute="trailingMargin" constant="-20" id="0g9-Dj-HjY"/>
+                            <constraint firstItem="UCq-Td-FDj" firstAttribute="bottom" secondItem="b1v-sy-Xc2" secondAttribute="bottomMargin" constant="-54" id="a0D-Ci-ln4"/>
+                            <constraint firstItem="UCq-Td-FDj" firstAttribute="leading" secondItem="b1v-sy-Xc2" secondAttribute="leadingMargin" constant="20" id="cka-Us-6QT"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="0j2-AA-jHb"/>
+                    <connections>
+                        <outlet property="scrollView" destination="UCq-Td-FDj" id="osN-Sw-fvg"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gk5-ZB-WKe" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2369.5652173913045" y="-100.44642857142857"/>
+        </scene>
     </scenes>
     <resources>
         <image name="NicePng_flower-emoji-png_498606" width="463" height="663"/>
         <image name="PngItem_1299909" width="529" height="644"/>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
         <systemColor name="secondarySystemGroupedBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
