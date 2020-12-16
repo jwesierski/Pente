@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="LZN-tA-Bn4">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17506" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Mqp-5l-oxW">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17125"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17505"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -13,11 +13,11 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="LanguageListViewController" customModule="Pente" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="YmK-hv-LmM">
-                                <rect key="frame" x="0.0" y="88" width="414" height="774"/>
+                                <rect key="frame" x="0.0" y="56" width="414" height="752"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="languageCell" id="fbw-0D-ZyN">
@@ -57,7 +57,7 @@
             <objects>
                 <viewController id="Vd9-Wm-eTT" customClass="FrenchViewController" customModule="Pente" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="zxa-qh-Dsh">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="insetGrouped" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" sectionFooterHeight="18" translatesAutoresizingMaskIntoConstraints="NO" id="wHr-K2-ac9">
@@ -123,7 +123,7 @@
                             </tableView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="uac-Gg-r0a"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" systemColor="linkColor"/>
                         <constraints>
                             <constraint firstItem="uac-Gg-r0a" firstAttribute="trailing" secondItem="wHr-K2-ac9" secondAttribute="trailing" id="Uqc-eJ-4Zi"/>
                             <constraint firstItem="wHr-K2-ac9" firstAttribute="top" secondItem="uac-Gg-r0a" secondAttribute="top" id="brt-ok-3JN"/>
@@ -138,7 +138,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="CQb-Cm-Bo9" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="724.63768115942037" y="-108.48214285714285"/>
+            <point key="canvasLocation" x="730" y="-100"/>
         </scene>
         <!--La vie en rose-->
         <scene sceneID="Ps8-nJ-ajA">
@@ -151,10 +151,10 @@
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" scrollEnabled="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZBL-Wd-R2g">
                                 <rect key="frame" x="40" y="129" width="334" height="625"/>
                                 <subviews>
-                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" scrollEnabled="NO" editable="NO" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gDB-6F-Ahn">
-                                        <rect key="frame" x="0.0" y="-848" width="334" height="1544"/>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" editable="NO" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gDB-6F-Ahn">
+                                        <rect key="frame" x="0.0" y="-848" width="334" height="1239"/>
                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                                        <mutableString key="text">Des yeux qui font baisser les miens
+                                        <string key="text">Des yeux qui font baisser les miens
 Un rire qui se perd sur sa bouche
 Voilà le portrait sans retouches
 De l'homme auquel j'appartiens
@@ -192,7 +192,7 @@ Alors je sens dans moi
 Mon cœur qui bat
 La la, la la, la la
 La la, la la, ah la
-La la la la</mutableString>
+La la la la</string>
                                         <color key="textColor" systemColor="systemPinkColor"/>
                                         <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="20"/>
                                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
@@ -245,7 +245,65 @@ La la la la</mutableString>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pMj-pD-2Mi" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1711.5942028985507" y="-46.205357142857139"/>
+            <point key="canvasLocation" x="1668" y="-100"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="TIg-dK-DnS">
+            <objects>
+                <viewController id="Mqp-5l-oxW" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="1qG-d7-yfj">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WQg-Sf-kXi">
+                                <rect key="frame" x="151" y="393" width="112" height="30"/>
+                                <state key="normal">
+                                    <color key="titleColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <segue destination="LZN-tA-Bn4" kind="show" id="RQL-X9-rf3"/>
+                                </connections>
+                            </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="PngItem_1299909" translatesAutoresizingMaskIntoConstraints="NO" id="T0Y-Lt-ouZ">
+                                <rect key="frame" x="151" y="329" width="112" height="128"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="128" id="El8-8y-TtX"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="128" id="bhg-2C-CKq"/>
+                                    <constraint firstAttribute="width" constant="112" id="sW4-GV-8Vv"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="PENTE" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2Yh-NS-1Di">
+                                <rect key="frame" x="120" y="531" width="175" height="79"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="79" id="C8c-kF-w58"/>
+                                    <constraint firstAttribute="width" constant="175" id="FRE-SF-d7h"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Papyrus" family="Papyrus" pointSize="51"/>
+                                <color key="textColor" systemColor="secondarySystemGroupedBackgroundColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="vZU-iq-OKR"/>
+                        <color key="backgroundColor" systemColor="systemOrangeColor"/>
+                        <color key="tintColor" systemColor="systemOrangeColor"/>
+                        <constraints>
+                            <constraint firstItem="vZU-iq-OKR" firstAttribute="trailing" secondItem="WQg-Sf-kXi" secondAttribute="trailing" constant="151" id="7vW-JZ-0wc"/>
+                            <constraint firstItem="vZU-iq-OKR" firstAttribute="trailing" secondItem="2Yh-NS-1Di" secondAttribute="trailing" constant="119" id="Byu-iw-LZk"/>
+                            <constraint firstItem="2Yh-NS-1Di" firstAttribute="leading" secondItem="vZU-iq-OKR" secondAttribute="leading" constant="120" id="Eba-Bo-sz1"/>
+                            <constraint firstItem="T0Y-Lt-ouZ" firstAttribute="leading" secondItem="vZU-iq-OKR" secondAttribute="leading" constant="151" id="LGL-Yw-knq"/>
+                            <constraint firstItem="WQg-Sf-kXi" firstAttribute="leading" secondItem="vZU-iq-OKR" secondAttribute="leading" constant="151" id="WlA-zK-IGj"/>
+                            <constraint firstItem="vZU-iq-OKR" firstAttribute="trailing" secondItem="T0Y-Lt-ouZ" secondAttribute="trailing" constant="151" id="b7x-VH-Hz9"/>
+                            <constraint firstItem="vZU-iq-OKR" firstAttribute="bottom" secondItem="2Yh-NS-1Di" secondAttribute="bottom" constant="252" id="iBy-Ym-dA1"/>
+                            <constraint firstItem="vZU-iq-OKR" firstAttribute="trailing" secondItem="2Yh-NS-1Di" secondAttribute="trailing" constant="119" id="jo9-6s-HjW"/>
+                            <constraint firstItem="WQg-Sf-kXi" firstAttribute="top" secondItem="vZU-iq-OKR" secondAttribute="top" constant="349" id="qDx-WM-dyS"/>
+                            <constraint firstItem="T0Y-Lt-ouZ" firstAttribute="top" secondItem="vZU-iq-OKR" secondAttribute="top" constant="285" id="s8N-b4-wtB"/>
+                            <constraint firstItem="vZU-iq-OKR" firstAttribute="bottom" secondItem="2Yh-NS-1Di" secondAttribute="bottom" constant="252" id="uc7-yt-XG1"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="p7U-Xb-nPo" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1846.376811594203" y="-100.44642857142857"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="Hss-bH-DcP">
@@ -254,7 +312,7 @@ La la la la</mutableString>
                     <toolbarItems/>
                     <navigationItem key="navigationItem" id="OpO-3T-dNI"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="xiU-5Q-JpQ">
-                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="56"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
@@ -268,11 +326,21 @@ La la la la</mutableString>
         </scene>
     </scenes>
     <resources>
+        <image name="PngItem_1299909" width="529" height="644"/>
+        <systemColor name="linkColor">
+            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="secondarySystemGroupedBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
         <systemColor name="systemIndigoColor">
             <color red="0.34509803921568627" green="0.33725490196078434" blue="0.83921568627450982" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemOrangeColor">
+            <color red="1" green="0.58431372549019611" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="systemPinkColor">
             <color red="1" green="0.17647058823529413" blue="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
