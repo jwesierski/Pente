@@ -152,8 +152,8 @@
                                 <rect key="frame" x="40" y="129" width="334" height="625"/>
                                 <subviews>
                                     <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" editable="NO" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gDB-6F-Ahn">
-                                        <rect key="frame" x="0.0" y="-848" width="334" height="1239"/>
-                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <rect key="frame" x="0.0" y="-986" width="334" height="1377"/>
+                                        <color key="backgroundColor" systemColor="systemOrangeColor"/>
                                         <string key="text">Des yeux qui font baisser les miens
 Un rire qui se perd sur sa bouche
 Voilà le portrait sans retouches
@@ -193,13 +193,15 @@ Mon cœur qui bat
 La la, la la, la la
 La la, la la, ah la
 La la la la</string>
-                                        <color key="textColor" systemColor="systemPinkColor"/>
+                                        <color key="textColor" systemColor="systemGroupedBackgroundColor"/>
                                         <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="20"/>
                                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                     </textView>
                                     <button opaque="NO" multipleTouchEnabled="YES" alpha="0.94999999999999996" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HIB-ux-gBe">
                                         <rect key="frame" x="288" y="0.0" width="46" height="29"/>
-                                        <state key="normal" title="Button"/>
+                                        <state key="normal" title="Play">
+                                            <color key="titleColor" systemColor="secondarySystemGroupedBackgroundColor"/>
+                                        </state>
                                         <connections>
                                             <action selector="hitBtn:" destination="a0s-6e-adT" eventType="touchUpInside" id="XI2-DM-lLy"/>
                                         </connections>
@@ -212,7 +214,7 @@ La la la la</string>
                                     <constraint firstItem="HIB-ux-gBe" firstAttribute="top" secondItem="poP-25-VZe" secondAttribute="top" id="NiS-TU-ajT"/>
                                     <constraint firstItem="gDB-6F-Ahn" firstAttribute="leading" secondItem="poP-25-VZe" secondAttribute="leading" id="PDV-9Y-9sL"/>
                                     <constraint firstItem="gDB-6F-Ahn" firstAttribute="bottom" secondItem="poP-25-VZe" secondAttribute="bottom" id="U8f-3v-Cbq"/>
-                                    <constraint firstItem="gDB-6F-Ahn" firstAttribute="top" secondItem="poP-25-VZe" secondAttribute="top" constant="-848" id="WRF-8y-MPp"/>
+                                    <constraint firstItem="gDB-6F-Ahn" firstAttribute="top" secondItem="poP-25-VZe" secondAttribute="top" constant="-986" id="WRF-8y-MPp"/>
                                     <constraint firstAttribute="trailing" secondItem="HIB-ux-gBe" secondAttribute="trailing" id="WUe-p1-8gy"/>
                                     <constraint firstAttribute="width" constant="334" id="ZWC-Kj-ar2"/>
                                     <constraint firstItem="HIB-ux-gBe" firstAttribute="leading" secondItem="poP-25-VZe" secondAttribute="leading" constant="288" id="amF-oj-aUn"/>
@@ -226,12 +228,20 @@ La la la la</string>
                                 <rect key="frame" x="109" y="45" width="197" height="37"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="31"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
+                                <color key="textColor" systemColor="systemBackgroundColor"/>
+                                <color key="highlightedColor" systemColor="systemBackgroundColor"/>
                             </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="NicePng_flower-emoji-png_498606" translatesAutoresizingMaskIntoConstraints="NO" id="gtK-aP-sds">
+                                <rect key="frame" x="15" y="12" width="86" height="103"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="NicePng_flower-emoji-png_498606" translatesAutoresizingMaskIntoConstraints="NO" id="BdC-90-Y5d">
+                                <rect key="frame" x="314" y="12" width="86" height="103"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="Abh-hf-Hu1"/>
-                        <color key="backgroundColor" systemColor="systemIndigoColor"/>
+                        <color key="backgroundColor" systemColor="systemOrangeColor"/>
                         <constraints>
                             <constraint firstItem="ZBL-Wd-R2g" firstAttribute="leading" secondItem="P5r-Lp-RUm" secondAttribute="leadingMargin" constant="20" id="Rcd-Tn-ZLF"/>
                             <constraint firstItem="ZBL-Wd-R2g" firstAttribute="bottom" secondItem="P5r-Lp-RUm" secondAttribute="bottomMargin" constant="-54" id="j2s-hc-jgv"/>
@@ -245,7 +255,7 @@ La la la la</string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pMj-pD-2Mi" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1668" y="-100"/>
+            <point key="canvasLocation" x="1666.6666666666667" y="-100.44642857142857"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="TIg-dK-DnS">
@@ -326,6 +336,7 @@ La la la la</string>
         </scene>
     </scenes>
     <resources>
+        <image name="NicePng_flower-emoji-png_498606" width="463" height="663"/>
         <image name="PngItem_1299909" width="529" height="644"/>
         <systemColor name="linkColor">
             <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -336,14 +347,11 @@ La la la la</string>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
-        <systemColor name="systemIndigoColor">
-            <color red="0.34509803921568627" green="0.33725490196078434" blue="0.83921568627450982" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        <systemColor name="systemGroupedBackgroundColor">
+            <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="systemOrangeColor">
             <color red="1" green="0.58431372549019611" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </systemColor>
-        <systemColor name="systemPinkColor">
-            <color red="1" green="0.17647058823529413" blue="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>

@@ -23,7 +23,7 @@ class songWordsViewController: UIViewController {
     
     @IBAction func hitBtn(_ sender: Any) {
         UIScrollView.animate(withDuration: 10, animations: {
-        self.scrollView.contentOffset = CGPoint(x: 0, y: 100) })
+        self.scrollView.contentOffset = CGPoint(x: 0, y: 1000) })
         if let soundURL = Bundle.main.url(forResource: "frenchSongTest", withExtension: "mp3") {
                 
                     do {
