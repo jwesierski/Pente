@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17506" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="LZN-tA-Bn4">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="LZN-tA-Bn4">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17505"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17125"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -61,7 +61,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="insetGrouped" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" sectionFooterHeight="18" translatesAutoresizingMaskIntoConstraints="NO" id="wHr-K2-ac9">
-                                <rect key="frame" x="0.0" y="88" width="414" height="774"/>
+                                <rect key="frame" x="0.0" y="56" width="414" height="752"/>
                                 <color key="separatorColor" red="0.14142492409999999" green="0.096467815339999999" blue="0.3788486123" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="frenchVideoCell" textLabel="b4f-Uv-tvc" rowHeight="146" style="IBUITableViewCellStyleDefault" id="eEO-Zg-a7B">
@@ -81,7 +81,7 @@
                                             </subviews>
                                         </tableViewCellContentView>
                                         <connections>
-                                            <segue destination="31O-Sg-NAg" kind="show" id="a9o-vC-f22"/>
+                                            <segue destination="a0s-6e-adT" kind="showDetail" id="DFD-xg-7tT"/>
                                         </connections>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="frenchSongCell" textLabel="8oa-y1-VoA" rowHeight="138" style="IBUITableViewCellStyleDefault" id="fB6-yr-Vem">
@@ -140,101 +140,119 @@
             </objects>
             <point key="canvasLocation" x="724.63768115942037" y="-108.48214285714285"/>
         </scene>
-        <!--Table View Controller-->
-        <scene sceneID="yA0-ie-8a9">
+        <!--La vie en rose-->
+        <scene sceneID="Ps8-nJ-ajA">
             <objects>
-                <tableViewController id="31O-Sg-NAg" customClass="TableViewController" customModule="Pente" customModuleProvider="target" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="insetGrouped" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" sectionFooterHeight="18" id="9d3-uZ-QVo">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                <viewController title="La vie en rose" id="a0s-6e-adT" customClass="songWordsViewController" customModule="Pente" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="P5r-Lp-RUm">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <sections>
-                            <tableViewSection headerTitle="Videos with translation" id="wma-Nc-W0e">
-                                <cells>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="165" id="kbr-dy-GQM">
-                                        <rect key="frame" x="20" y="55.5" width="374" height="165"/>
-                                        <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="kbr-dy-GQM" id="JL4-jP-Wk6">
-                                            <rect key="frame" x="0.0" y="0.0" width="374" height="165"/>
-                                            <autoresizingMask key="autoresizingMask"/>
-                                        </tableViewCellContentView>
-                                    </tableViewCell>
-                                </cells>
-                            </tableViewSection>
-                            <tableViewSection headerTitle="Songs with translation" id="iZV-rr-VcM">
-                                <cells>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="413" id="5gK-7k-kux">
-                                        <rect key="frame" x="20" y="276.5" width="374" height="413"/>
-                                        <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="5gK-7k-kux" id="Mth-EO-ocO">
-                                            <rect key="frame" x="0.0" y="0.0" width="374" height="413"/>
-                                            <autoresizingMask key="autoresizingMask"/>
-                                            <subviews>
-                                                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZBL-Wd-R2g">
-                                                    <rect key="frame" x="20" y="11" width="334" height="391"/>
-                                                    <subviews>
-                                                        <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" editable="NO" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gDB-6F-Ahn">
-                                                            <rect key="frame" x="0.0" y="-848" width="334" height="1239"/>
-                                                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                                                            <mutableString key="text">Savez-vous ce que tous ces gens ont en commun?  C'est Amélie.  Amélie Poulain.  Et elle va changer leur vie. Dis-moi, papa, si tu trouvais quelque chose de ton enfance que tu chérissais comme un trésor, comment te sentirais-tu?  Lorsqu'il travaille, aucun radar de vitesse ne peut le détecter. N'est-ce pas vrai?  Elle se brise le dos pour réparer la vie désordonnée des autres.  Mais elle?  Qui s'occupera de ça?  Je ne la connais męme pas. Bien sûr, vous la connaissez!  ...dans tes rêves.  Pourrait-elle tomber amoureuse?  Le coup de foudre.  Ça arrive.  N'es-tu pas belle, Georgette, quand tu rougis?  C'est une affection cutanée. C'est toi? Bien sûr, c'est toi. After Alien: Resurrection ... Collignon est un camion!  ... le nouveau film de Jean-Pierre Jeunet, Le fabuleux destin d'Amélie Poulain. Et si elle changeait votre vie? Et Lady Di?  Pourquoi quelqu'un ne peut-il pas faire la même chose pour Lady Di?</mutableString>
-                                                            <color key="textColor" systemColor="labelColor"/>
-                                                            <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="20"/>
-                                                            <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                                                        </textView>
-                                                        <button opaque="NO" multipleTouchEnabled="YES" alpha="0.94999999999999996" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HIB-ux-gBe">
-                                                            <rect key="frame" x="288" y="0.0" width="46" height="29"/>
-                                                            <state key="normal" title="Button"/>
-                                                            <connections>
-                                                                <action selector="hitBtn:" destination="31O-Sg-NAg" eventType="touchUpInside" id="FGv-pm-oGs"/>
-                                                            </connections>
-                                                        </button>
-                                                    </subviews>
-                                                    <constraints>
-                                                        <constraint firstAttribute="bottom" secondItem="gDB-6F-Ahn" secondAttribute="bottom" id="EEw-cn-8aW"/>
-                                                        <constraint firstItem="poP-25-VZe" firstAttribute="bottom" secondItem="HIB-ux-gBe" secondAttribute="bottom" constant="362" id="FVY-3m-cTV"/>
-                                                        <constraint firstAttribute="height" constant="391" id="M4i-5P-F0b"/>
-                                                        <constraint firstItem="HIB-ux-gBe" firstAttribute="top" secondItem="poP-25-VZe" secondAttribute="top" id="NiS-TU-ajT"/>
-                                                        <constraint firstItem="gDB-6F-Ahn" firstAttribute="leading" secondItem="poP-25-VZe" secondAttribute="leading" id="PDV-9Y-9sL"/>
-                                                        <constraint firstItem="gDB-6F-Ahn" firstAttribute="bottom" secondItem="poP-25-VZe" secondAttribute="bottom" id="U8f-3v-Cbq"/>
-                                                        <constraint firstItem="gDB-6F-Ahn" firstAttribute="top" secondItem="poP-25-VZe" secondAttribute="top" constant="-848" id="WRF-8y-MPp"/>
-                                                        <constraint firstAttribute="trailing" secondItem="HIB-ux-gBe" secondAttribute="trailing" id="WUe-p1-8gy"/>
-                                                        <constraint firstAttribute="width" constant="334" id="ZWC-Kj-ar2"/>
-                                                        <constraint firstItem="HIB-ux-gBe" firstAttribute="leading" secondItem="poP-25-VZe" secondAttribute="leading" constant="288" id="amF-oj-aUn"/>
-                                                        <constraint firstItem="HIB-ux-gBe" firstAttribute="trailing" secondItem="poP-25-VZe" secondAttribute="trailing" id="fc1-Go-ypZ"/>
-                                                        <constraint firstItem="gDB-6F-Ahn" firstAttribute="trailing" secondItem="poP-25-VZe" secondAttribute="trailing" id="hMv-7p-MjN"/>
-                                                    </constraints>
-                                                    <viewLayoutGuide key="contentLayoutGuide" id="7mh-Wq-nou"/>
-                                                    <viewLayoutGuide key="frameLayoutGuide" id="poP-25-VZe"/>
-                                                </scrollView>
-                                            </subviews>
-                                            <constraints>
-                                                <constraint firstItem="ZBL-Wd-R2g" firstAttribute="leading" secondItem="Mth-EO-ocO" secondAttribute="leadingMargin" id="XSW-Cr-iAn"/>
-                                                <constraint firstItem="ZBL-Wd-R2g" firstAttribute="bottom" secondItem="Mth-EO-ocO" secondAttribute="bottomMargin" id="sWH-aZ-yOf"/>
-                                                <constraint firstItem="ZBL-Wd-R2g" firstAttribute="trailing" secondItem="Mth-EO-ocO" secondAttribute="trailingMargin" id="usT-lf-GSe"/>
-                                            </constraints>
-                                        </tableViewCellContentView>
-                                    </tableViewCell>
-                                </cells>
-                            </tableViewSection>
-                        </sections>
-                        <connections>
-                            <outlet property="dataSource" destination="31O-Sg-NAg" id="Npm-6u-aQz"/>
-                            <outlet property="delegate" destination="31O-Sg-NAg" id="dmZ-RU-KFn"/>
-                        </connections>
-                    </tableView>
-                    <navigationItem key="navigationItem" id="9kK-P0-IqC"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" scrollEnabled="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZBL-Wd-R2g">
+                                <rect key="frame" x="40" y="129" width="334" height="625"/>
+                                <subviews>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" scrollEnabled="NO" editable="NO" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gDB-6F-Ahn">
+                                        <rect key="frame" x="0.0" y="-848" width="334" height="1544"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <mutableString key="text">Des yeux qui font baisser les miens
+Un rire qui se perd sur sa bouche
+Voilà le portrait sans retouches
+De l'homme auquel j'appartiens
+Quand il me prend dans ses bras
+Il me parle tout bas
+Je vois la vie en rose
+Il me dit des mots d'amour
+Des mots de tous les jours
+Et ça me fait quelque chose
+Il est entré dans mon cœur
+Une part de bonheur
+Dont je connais la cause
+C'est lui pour moi, moi pour lui dans la vie
+Il me l'a dit, l'a juré pour la vie
+Et dès que je l'aperçois
+Alors je sens en moi
+Mon cœur qui bat
+Des nuits d'amour à plus finir
+Un grand bonheur qui prend sa place
+Des ennuis, des chagrins s'effacent
+Heureux, heureux à en mourir
+Quand il me prend dans ses bras
+Il me parle tout bas
+Je vois la vie en rose
+Il me dit des mots d'amour
+Des mots de tous les jours
+Et ça me fait quelque chose
+Il est entré dans mon cœur
+Une part de bonheur
+Dont je connais la cause
+C'est toi pour moi, moi pour toi dans la vie
+Il me l'a dit, l'a juré pour la vie
+Et dès que je t'aperçois
+Alors je sens dans moi
+Mon cœur qui bat
+La la, la la, la la
+La la, la la, ah la
+La la la la</mutableString>
+                                        <color key="textColor" systemColor="systemPinkColor"/>
+                                        <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="20"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                    </textView>
+                                    <button opaque="NO" multipleTouchEnabled="YES" alpha="0.94999999999999996" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HIB-ux-gBe">
+                                        <rect key="frame" x="288" y="0.0" width="46" height="29"/>
+                                        <state key="normal" title="Button"/>
+                                        <connections>
+                                            <action selector="hitBtn:" destination="a0s-6e-adT" eventType="touchUpInside" id="XI2-DM-lLy"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="gDB-6F-Ahn" secondAttribute="bottom" id="EEw-cn-8aW"/>
+                                    <constraint firstItem="poP-25-VZe" firstAttribute="bottom" secondItem="HIB-ux-gBe" secondAttribute="bottom" constant="362" id="FVY-3m-cTV"/>
+                                    <constraint firstAttribute="height" constant="391" id="M4i-5P-F0b"/>
+                                    <constraint firstItem="HIB-ux-gBe" firstAttribute="top" secondItem="poP-25-VZe" secondAttribute="top" id="NiS-TU-ajT"/>
+                                    <constraint firstItem="gDB-6F-Ahn" firstAttribute="leading" secondItem="poP-25-VZe" secondAttribute="leading" id="PDV-9Y-9sL"/>
+                                    <constraint firstItem="gDB-6F-Ahn" firstAttribute="bottom" secondItem="poP-25-VZe" secondAttribute="bottom" id="U8f-3v-Cbq"/>
+                                    <constraint firstItem="gDB-6F-Ahn" firstAttribute="top" secondItem="poP-25-VZe" secondAttribute="top" constant="-848" id="WRF-8y-MPp"/>
+                                    <constraint firstAttribute="trailing" secondItem="HIB-ux-gBe" secondAttribute="trailing" id="WUe-p1-8gy"/>
+                                    <constraint firstAttribute="width" constant="334" id="ZWC-Kj-ar2"/>
+                                    <constraint firstItem="HIB-ux-gBe" firstAttribute="leading" secondItem="poP-25-VZe" secondAttribute="leading" constant="288" id="amF-oj-aUn"/>
+                                    <constraint firstItem="HIB-ux-gBe" firstAttribute="trailing" secondItem="poP-25-VZe" secondAttribute="trailing" id="fc1-Go-ypZ"/>
+                                    <constraint firstItem="gDB-6F-Ahn" firstAttribute="trailing" secondItem="poP-25-VZe" secondAttribute="trailing" id="hMv-7p-MjN"/>
+                                </constraints>
+                                <viewLayoutGuide key="contentLayoutGuide" id="7mh-Wq-nou"/>
+                                <viewLayoutGuide key="frameLayoutGuide" id="poP-25-VZe"/>
+                            </scrollView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="La Vie En Rose" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nid-tg-8SN">
+                                <rect key="frame" x="109" y="45" width="197" height="37"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="31"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="Abh-hf-Hu1"/>
+                        <color key="backgroundColor" systemColor="systemIndigoColor"/>
+                        <constraints>
+                            <constraint firstItem="ZBL-Wd-R2g" firstAttribute="leading" secondItem="P5r-Lp-RUm" secondAttribute="leadingMargin" constant="20" id="Rcd-Tn-ZLF"/>
+                            <constraint firstItem="ZBL-Wd-R2g" firstAttribute="bottom" secondItem="P5r-Lp-RUm" secondAttribute="bottomMargin" constant="-54" id="j2s-hc-jgv"/>
+                            <constraint firstItem="ZBL-Wd-R2g" firstAttribute="trailing" secondItem="P5r-Lp-RUm" secondAttribute="trailingMargin" constant="-20" id="w2P-iT-ZI2"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="D8d-vA-hab"/>
                     <connections>
-                        <outlet property="scrollView" destination="ZBL-Wd-R2g" id="biw-j3-EuH"/>
+                        <outlet property="scrollView" destination="ZBL-Wd-R2g" id="fFI-di-JaH"/>
                     </connections>
-                </tableViewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Qjm-eQ-bVR" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="pMj-pD-2Mi" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1711.5942028985507" y="-100.44642857142857"/>
+            <point key="canvasLocation" x="1711.5942028985507" y="-46.205357142857139"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="Hss-bH-DcP">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="LZN-tA-Bn4" sceneMemberID="viewController">
                     <toolbarItems/>
+                    <navigationItem key="navigationItem" id="OpO-3T-dNI"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="xiU-5Q-JpQ">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -250,11 +268,14 @@
         </scene>
     </scenes>
     <resources>
-        <systemColor name="labelColor">
-            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemIndigoColor">
+            <color red="0.34509803921568627" green="0.33725490196078434" blue="0.83921568627450982" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemPinkColor">
+            <color red="1" green="0.17647058823529413" blue="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>

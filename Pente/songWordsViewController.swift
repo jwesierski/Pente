@@ -1,16 +1,23 @@
 //
-//  TableViewController.swift
+//  songWordsViewController.swift
 //  Pente
 //
-//  Created by Beverly Harris on 12/13/20.
+//  Created by Jack Michael Wesierski on 12/16/20.
 //
-
 import UIKit
 import SwiftUI
 import AVKit
 import AVFoundation
 
-class TableViewController: UITableViewController {
+
+class songWordsViewController: UIViewController {
+
+    override func viewDidLoad() {
+        super.viewDidLoad()
+
+        // Do any additional setup afte loading the view.
+    }
+    
     var audioPlayer: AVAudioPlayer!
     @IBOutlet weak var scrollView: UIScrollView!
     
