@@ -14,8 +14,8 @@ class TableViewController: UITableViewController {
     @IBOutlet weak var scrollView: UIScrollView!
     
     @IBAction func hitBtn(_ sender: Any) {
-        UIScrollView.animate(withDuration: 10, animations: {
-        self.scrollView.contentOffset = CGPoint(x: 0, y: 1000) })
+        UIScrollView.animate(withDuration: 15, animations: {
+        self.scrollView.contentOffset = CGPoint(x: 0, y: 1200) })
     }
     
     
