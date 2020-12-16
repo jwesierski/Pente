@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		246082C62586F4E900B580F4 /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 246082C52586F4E900B580F4 /* TableViewController.swift */; };
 		8888361225801F8D0039031E /* FrenchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8888361125801F8D0039031E /* FrenchViewController.swift */; };
+		88E6329D2589E5F300F7FB7D /* frenchSongTest.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 88E6329C2589E5F300F7FB7D /* frenchSongTest.mp3 */; };
 		88F7F2C9255B3CDF00366FF0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88F7F2C8255B3CDF00366FF0 /* AppDelegate.swift */; };
 		88F7F2CB255B3CDF00366FF0 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88F7F2CA255B3CDF00366FF0 /* SceneDelegate.swift */; };
 		88F7F2CD255B3CDF00366FF0 /* LanguageListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88F7F2CC255B3CDF00366FF0 /* LanguageListViewController.swift */; };
@@ -39,6 +40,7 @@
 /* Begin PBXFileReference section */
 		246082C52586F4E900B580F4 /* TableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
 		8888361125801F8D0039031E /* FrenchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FrenchViewController.swift; sourceTree = "<group>"; };
+		88E6329C2589E5F300F7FB7D /* frenchSongTest.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = frenchSongTest.mp3; sourceTree = "<group>"; };
 		88F7F2C5255B3CDF00366FF0 /* Pente.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Pente.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		88F7F2C8255B3CDF00366FF0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		88F7F2CA255B3CDF00366FF0 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -110,6 +112,7 @@
 				88F7F2CE255B3CDF00366FF0 /* Main.storyboard */,
 				246082C52586F4E900B580F4 /* TableViewController.swift */,
 				88F7F2D1255B3CE700366FF0 /* Assets.xcassets */,
+				88E6329C2589E5F300F7FB7D /* frenchSongTest.mp3 */,
 				88F7F2D3255B3CE700366FF0 /* LaunchScreen.storyboard */,
 				88F7F2D6255B3CE700366FF0 /* Info.plist */,
 			);
@@ -238,6 +241,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				88F7F2D5255B3CE700366FF0 /* LaunchScreen.storyboard in Resources */,
+				88E6329D2589E5F300F7FB7D /* frenchSongTest.mp3 in Resources */,
 				88F7F2D2255B3CE700366FF0 /* Assets.xcassets in Resources */,
 				88F7F2D0255B3CDF00366FF0 /* Main.storyboard in Resources */,
 			);
