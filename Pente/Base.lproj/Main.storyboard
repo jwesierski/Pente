@@ -265,6 +265,20 @@ La la la la</mutableString>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" editable="NO" text="When does the singer see life in pink?" textAlignment="center" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nLv-dE-1SZ">
+                                        <rect key="frame" x="8" y="94" width="356" height="43"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <color key="textColor" systemColor="labelColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                    </textView>
+                                    <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Elle vois la vie en rose quand..." textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="QWS-LL-9k1">
+                                        <rect key="frame" x="8" y="136" width="356" height="34"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
                                 </subviews>
                                 <viewLayoutGuide key="contentLayoutGuide" id="2qf-Vt-9tt"/>
                                 <viewLayoutGuide key="frameLayoutGuide" id="in4-r6-HAY"/>
@@ -407,9 +421,9 @@ La la la la</mutableString>
                                 <rect key="frame" x="40" y="363" width="334" height="391"/>
                                 <subviews>
                                     <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="Y8m-Ba-Fsh">
-                                        <rect key="frame" x="8" y="8" width="326" height="383"/>
+                                        <rect key="frame" x="4" y="4" width="326" height="383"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <color key="backgroundColor" red="0.94586497550000004" green="0.54298627379999997" blue="0.50054913759999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <mutableString key="text">Eyes that make mine lower
 Des yeux qui font baisser les miens
 
@@ -540,11 +554,25 @@ La la la la</mutableString>
                                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                     </textView>
                                     <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Le deux parties du corps sont.." textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="iS1-1f-bXd">
-                                        <rect key="frame" x="8" y="52" width="356" height="34"/>
+                                        <rect key="frame" x="8" y="51" width="356" height="34"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
+                                    <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Elle vois la vie en rose quand..." textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="PuP-nu-Mbm">
+                                        <rect key="frame" x="8" y="131" width="356" height="34"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" editable="NO" text="When does the singer see life in pink?" textAlignment="center" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Pv7-Yk-HDf">
+                                        <rect key="frame" x="8" y="93" width="356" height="39"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <color key="textColor" systemColor="labelColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                    </textView>
                                 </subviews>
                                 <viewLayoutGuide key="contentLayoutGuide" id="oKx-wf-Pve"/>
                                 <viewLayoutGuide key="frameLayoutGuide" id="L4C-Lt-krJ"/>
