@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Mqp-5l-oxW">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17506" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Mqp-5l-oxW">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17125"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17505"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Language List View Controller-->
+        <!--Select Language-->
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="LanguageListViewController" customModule="Pente" customModuleProvider="target" sceneMemberID="viewController">
@@ -22,12 +22,17 @@
                                 <color key="separatorColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <color key="sectionIndexColor" red="0.9904261231" green="0.79890179630000002" blue="0.013285338880000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <color key="sectionIndexBackgroundColor" systemColor="systemOrangeColor"/>
+                                <imageView key="tableFooterView" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="world-language-foreign-language-english-learn-more-2d14b84c04503213f6a221ca296bf60e-1" id="KjI-hj-ec5">
+                                    <rect key="frame" x="0.0" y="199" width="414" height="143"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <color key="backgroundColor" red="0.85462999340000001" green="0.223122716" blue="0.057445354759999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </imageView>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="languageCell" rowHeight="47" id="fbw-0D-ZyN">
-                                        <rect key="frame" x="0.0" y="28" width="414" height="47"/>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="languageCell" rowHeight="143" id="fbw-0D-ZyN">
+                                        <rect key="frame" x="0.0" y="28" width="414" height="143"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="fbw-0D-ZyN" id="N4d-ej-7pn">
-                                            <rect key="frame" x="0.0" y="0.0" width="414" height="47"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="143"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                         </tableViewCellContentView>
                                         <color key="backgroundColor" red="0.9904261231" green="0.79890179630000002" blue="0.013285338880000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -47,7 +52,7 @@
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="YmK-hv-LmM" secondAttribute="trailing" id="vov-8H-T0L"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="NPH-hc-dwb"/>
+                    <navigationItem key="navigationItem" title="Select Language" id="NPH-hc-dwb"/>
                     <connections>
                         <outlet property="languageTableView" destination="YmK-hv-LmM" id="ec6-6F-P3A"/>
                     </connections>
@@ -56,7 +61,7 @@
             </objects>
             <point key="canvasLocation" x="-143.47826086956522" y="-99.776785714285708"/>
         </scene>
-        <!--French View Controller-->
+        <!--Select Form of Media-->
         <scene sceneID="Zec-EP-cSi">
             <objects>
                 <viewController id="Vd9-Wm-eTT" customClass="FrenchViewController" customModule="Pente" customModuleProvider="target" sceneMemberID="viewController">
@@ -69,7 +74,7 @@
                                 <color key="backgroundColor" systemColor="systemOrangeColor"/>
                                 <color key="separatorColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="frenchVideoCell" textLabel="b4f-Uv-tvc" rowHeight="146" style="IBUITableViewCellStyleDefault" id="eEO-Zg-a7B">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleAspectFit" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="frenchVideoCell" textLabel="b4f-Uv-tvc" rowHeight="146" style="IBUITableViewCellStyleDefault" id="eEO-Zg-a7B">
                                         <rect key="frame" x="20" y="55.5" width="374" height="146"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="eEO-Zg-a7B" id="sEZ-dD-LPT">
@@ -85,12 +90,12 @@
                                                 </label>
                                             </subviews>
                                         </tableViewCellContentView>
-                                        <color key="backgroundColor" red="0.9904261231" green="0.79890179630000002" blue="0.013285338880000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="backgroundColor" systemColor="systemYellowColor"/>
                                         <connections>
                                             <segue destination="a0s-6e-adT" kind="showDetail" id="DFD-xg-7tT"/>
                                         </connections>
                                     </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="frenchSongCell" textLabel="8oa-y1-VoA" rowHeight="138" style="IBUITableViewCellStyleDefault" id="fB6-yr-Vem">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleAspectFit" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="frenchSongCell" textLabel="8oa-y1-VoA" rowHeight="138" style="IBUITableViewCellStyleDefault" id="fB6-yr-Vem">
                                         <rect key="frame" x="20" y="201.5" width="374" height="138"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="fB6-yr-Vem" id="Gwu-AC-I1r">
@@ -108,7 +113,7 @@
                                         </tableViewCellContentView>
                                         <color key="backgroundColor" red="0.9904261231" green="0.79890179630000002" blue="0.013285338880000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="frenchMiscCell" textLabel="Ygs-Nh-Vzf" rowHeight="199" style="IBUITableViewCellStyleDefault" id="Nhy-Jh-umM">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleAspectFit" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="frenchMiscCell" textLabel="Ygs-Nh-Vzf" rowHeight="199" style="IBUITableViewCellStyleDefault" id="Nhy-Jh-umM">
                                         <rect key="frame" x="20" y="339.5" width="374" height="199"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Nhy-Jh-umM" id="eFu-nF-fZv">
@@ -124,11 +129,23 @@
                                                 </label>
                                             </subviews>
                                         </tableViewCellContentView>
-                                        <color key="backgroundColor" red="0.9904261231" green="0.79890179630000002" blue="0.013285338880000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="backgroundColor" systemColor="systemOrangeColor"/>
                                     </tableViewCell>
                                 </prototypes>
                                 <sections/>
                             </tableView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="photographic-film-computer-icons-cinematographer-icon-movie-drawing-9db506dd42f14869c63a81a249a44eda" translatesAutoresizingMaskIntoConstraints="NO" id="ug0-es-PJM">
+                                <rect key="frame" x="142" y="260" width="131" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="computer-icons-musical-note-music-download-musical-theatre-musical-note-a22a8a252c596f4d84f9e4af9d960178" translatesAutoresizingMaskIntoConstraints="NO" id="KQA-OU-EmZ">
+                                <rect key="frame" x="20" y="260" width="114" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="plus-and-minus-signs-computer-icons-plus-minus-sign-positive-vector-65e5c1da2e6256d5aea409dd679fb6ba" translatesAutoresizingMaskIntoConstraints="NO" id="JMx-FD-pyU">
+                                <rect key="frame" x="281" y="260" width="113" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="uac-Gg-r0a"/>
                         <color key="backgroundColor" systemColor="systemOrangeColor"/>
@@ -139,14 +156,14 @@
                             <constraint firstItem="wHr-K2-ac9" firstAttribute="leading" secondItem="uac-Gg-r0a" secondAttribute="leading" id="usj-JY-FLq"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="bGK-EB-ro1"/>
+                    <navigationItem key="navigationItem" title="Select Form of Media" id="bGK-EB-ro1"/>
                     <connections>
                         <outlet property="frenchMediaTableView" destination="wHr-K2-ac9" id="OHM-DE-SF3"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="CQb-Cm-Bo9" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="730" y="-100"/>
+            <point key="canvasLocation" x="728.98550724637687" y="-100.44642857142857"/>
         </scene>
         <!--La vie en rose-->
         <scene sceneID="Ps8-nJ-ajA">
@@ -175,7 +192,7 @@
                                 <rect key="frame" x="40" y="365" width="334" height="396"/>
                                 <subviews>
                                     <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" scrollEnabled="NO" editable="NO" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gDB-6F-Ahn" userLabel="French Lyrics">
-                                        <rect key="frame" x="0.0" y="-986" width="334" height="1310"/>
+                                        <rect key="frame" x="0.0" y="-986" width="334" height="2150"/>
                                         <color key="backgroundColor" red="1" green="0.49327188729999999" blue="0.47399842739999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <mutableString key="text">Des yeux qui font baisser les miens
 Un rire qui se perd sur sa bouche
@@ -237,7 +254,7 @@ La la la la</mutableString>
                                     <constraint firstItem="HIB-ux-gBe" firstAttribute="top" secondItem="poP-25-VZe" secondAttribute="top" id="NiS-TU-ajT"/>
                                     <constraint firstItem="gDB-6F-Ahn" firstAttribute="leading" secondItem="poP-25-VZe" secondAttribute="leading" id="PDV-9Y-9sL"/>
                                     <constraint firstItem="gDB-6F-Ahn" firstAttribute="bottom" secondItem="poP-25-VZe" secondAttribute="bottom" id="U8f-3v-Cbq"/>
-                                    <constraint firstItem="gDB-6F-Ahn" firstAttribute="top" secondItem="poP-25-VZe" secondAttribute="top" constant="-986" id="WRF-8y-MPp"/>
+                                    <constraint firstItem="gDB-6F-Ahn" firstAttribute="top" secondItem="poP-25-VZe" secondAttribute="top" id="WRF-8y-MPp"/>
                                     <constraint firstAttribute="trailing" secondItem="HIB-ux-gBe" secondAttribute="trailing" id="WUe-p1-8gy"/>
                                     <constraint firstAttribute="width" constant="334" id="ZWC-Kj-ar2"/>
                                     <constraint firstItem="HIB-ux-gBe" firstAttribute="leading" secondItem="poP-25-VZe" secondAttribute="leading" constant="288" id="amF-oj-aUn"/>
@@ -254,28 +271,32 @@ La la la la</mutableString>
                                     <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" editable="NO" text="In the first verse, which two body parts are mentioned?" textAlignment="center" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DdG-Dz-VBU">
                                         <rect key="frame" x="8" y="0.0" width="356" height="53"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                                        <color key="textColor" systemColor="labelColor"/>
+                                        <color key="backgroundColor" red="1" green="0.49327188729999999" blue="0.47399842739999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                     </textView>
                                     <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Le deux parties du corps sont.." textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="gXk-a0-7mi">
                                         <rect key="frame" x="8" y="52" width="356" height="34"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" red="1" green="0.49327188729999999" blue="0.47399842739999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
                                     <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" editable="NO" text="When does the singer see life in pink?" textAlignment="center" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nLv-dE-1SZ">
                                         <rect key="frame" x="8" y="94" width="356" height="43"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                                        <color key="textColor" systemColor="labelColor"/>
+                                        <color key="backgroundColor" red="1" green="0.49327188729999999" blue="0.47399842739999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                     </textView>
                                     <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Elle vois la vie en rose quand..." textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="QWS-LL-9k1">
                                         <rect key="frame" x="8" y="136" width="356" height="34"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" red="1" green="0.49327188729999999" blue="0.47399842739999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
@@ -294,7 +315,9 @@ La la la la</mutableString>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FJp-ai-7Aj">
                                 <rect key="frame" x="143" y="769" width="129" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Check my answers"/>
+                                <state key="normal" title="Check my answers">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
                                 <connections>
                                     <segue destination="SyU-Qm-fZz" kind="show" id="i9Y-xN-wDn"/>
                                 </connections>
@@ -424,7 +447,7 @@ La la la la</mutableString>
                                         <rect key="frame" x="4" y="4" width="326" height="383"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <color key="backgroundColor" red="0.94586497550000004" green="0.54298627379999997" blue="0.50054913759999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                        <mutableString key="text">Eyes that make mine lower
+                                        <string key="text">Eyes that make mine lower
 Des yeux qui font baisser les miens
 
 A laugh that is lost on his mouth
@@ -528,8 +551,8 @@ La la, la la, ah la
 La la, la la, ah la
 
 La la la la
-La la la la</mutableString>
-                                        <color key="textColor" systemColor="labelColor"/>
+La la la la</string>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="21"/>
                                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                     </textView>
@@ -548,28 +571,32 @@ La la la la</mutableString>
                                     <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" editable="NO" text="In the first verse, which two body parts are mentioned?" textAlignment="center" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lTt-a0-Hwx">
                                         <rect key="frame" x="8" y="0.0" width="356" height="53"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                                        <color key="textColor" systemColor="labelColor"/>
+                                        <color key="backgroundColor" red="1" green="0.49327188729999999" blue="0.47399842739999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                     </textView>
                                     <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Le deux parties du corps sont.." textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="iS1-1f-bXd">
                                         <rect key="frame" x="8" y="51" width="356" height="34"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" red="1" green="0.49327188729999999" blue="0.47399842739999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
                                     <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Elle vois la vie en rose quand..." textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="PuP-nu-Mbm">
                                         <rect key="frame" x="8" y="131" width="356" height="34"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" red="1" green="0.49327188729999999" blue="0.47399842739999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
                                     <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" editable="NO" text="When does the singer see life in pink?" textAlignment="center" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Pv7-Yk-HDf">
                                         <rect key="frame" x="8" y="93" width="356" height="39"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                                        <color key="textColor" systemColor="labelColor"/>
+                                        <color key="backgroundColor" red="1" green="0.49327188729999999" blue="0.47399842739999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                     </textView>
@@ -603,13 +630,191 @@ La la la la</mutableString>
             </objects>
             <point key="canvasLocation" x="2369.5652173913045" y="-100.44642857142857"/>
         </scene>
+        <!--View Controller-->
+        <scene sceneID="p82-uV-nXq">
+            <objects>
+                <viewController id="4vg-b7-e3a" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="kKo-gC-R21">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" ambiguous="YES" id="Bkq-0z-UhF">
+                                <rect key="frame" x="0.0" y="44" width="414" height="842"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="SeekPng.com_wave-emoji-png_1486235" translatesAutoresizingMaskIntoConstraints="NO" id="WX2-C1-sQC">
+                                        <rect key="frame" x="15" y="12" width="86" height="103"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="SeekPng.com_wave-emoji-png_1486235" highlightedImage="SeekPng.com_wave-emoji-png_1486235" translatesAutoresizingMaskIntoConstraints="NO" id="Rhh-I9-1CV">
+                                        <rect key="frame" x="314" y="12" width="86" height="103"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                    <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" scrollEnabled="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Nvb-UH-J8a">
+                                        <rect key="frame" x="40" y="365" width="334" height="396"/>
+                                        <subviews>
+                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" scrollEnabled="NO" editable="NO" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Iet-lp-5zx" userLabel="French Lyrics">
+                                                <rect key="frame" x="0.0" y="-986" width="334" height="2150"/>
+                                                <color key="backgroundColor" red="0.0" green="0.58980089430000004" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <mutableString key="text">Des yeux qui font baisser les miens
+Un rire qui se perd sur sa bouche
+Voilà le portrait sans retouches
+De l'homme auquel j'appartiens 
+Quand il me prend dans ses bras
+Il me parle tout bas
+Je vois la vie en rose
+Il me dit des mots d'amour
+Des mots de tous les jours
+Et ça me fait quelque chose 
+Il est entré dans mon cœur
+Une part de bonheur
+Dont je connais la cause 
+C'est lui pour moi, moi pour lui dans la vie
+Il me l'a dit, l'a juré pour la vie 
+Et dès que je l'aperçois
+Alors je sens en moi
+Mon cœur qui bat 
+Des nuits d'amour à plus finir
+Un grand bonheur qui prend sa place
+Des ennuis, des chagrins s'effacent
+Heureux, heureux à en mourir 
+Quand il me prend dans ses bras
+Il me parle tout bas
+Je vois la vie en rose 
+Il me dit des mots d'amour
+Des mots de tous les jours
+Et ça me fait quelque chose 
+Il est entré dans mon cœur
+Une part de bonheur
+Dont je connais la cause 
+C'est toi pour moi, moi pour toi dans la vie
+Il me l'a dit, l'a juré pour la vie 
+Et dès que je t'aperçois
+Alors je sens dans moi
+Mon cœur qui bat
+La la, la la, la la
+La la, la la, ah la
+La la la la</mutableString>
+                                                <color key="textColor" systemColor="systemGroupedBackgroundColor"/>
+                                                <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="21"/>
+                                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                            </textView>
+                                            <button opaque="NO" multipleTouchEnabled="YES" alpha="0.94999998807907104" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="r3Z-hZ-wg4">
+                                                <rect key="frame" x="288" y="0.0" width="46" height="29"/>
+                                                <state key="normal" title="Play">
+                                                    <color key="titleColor" systemColor="secondarySystemGroupedBackgroundColor"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="hitBtn:" destination="a0s-6e-adT" eventType="touchUpInside" id="Upg-BB-iZO"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstAttribute="trailing" secondItem="r3Z-hZ-wg4" secondAttribute="trailing" id="2ej-VX-vRs"/>
+                                            <constraint firstItem="Iet-lp-5zx" firstAttribute="trailing" secondItem="fr5-F2-9Tc" secondAttribute="trailing" id="7ZN-If-xUl"/>
+                                            <constraint firstAttribute="bottom" secondItem="Iet-lp-5zx" secondAttribute="bottom" id="Dpc-wF-29d"/>
+                                            <constraint firstItem="fr5-F2-9Tc" firstAttribute="bottom" secondItem="r3Z-hZ-wg4" secondAttribute="bottom" constant="362" id="EoQ-8l-F76"/>
+                                            <constraint firstItem="Iet-lp-5zx" firstAttribute="bottom" secondItem="fr5-F2-9Tc" secondAttribute="bottom" id="JLV-lC-t15"/>
+                                            <constraint firstItem="Iet-lp-5zx" firstAttribute="top" secondItem="fr5-F2-9Tc" secondAttribute="top" id="MQp-uT-q24"/>
+                                            <constraint firstItem="r3Z-hZ-wg4" firstAttribute="top" secondItem="fr5-F2-9Tc" secondAttribute="top" id="Mwf-Mp-GA2"/>
+                                            <constraint firstItem="Iet-lp-5zx" firstAttribute="leading" secondItem="fr5-F2-9Tc" secondAttribute="leading" id="RHR-G0-hZC"/>
+                                            <constraint firstAttribute="width" constant="334" id="hkw-eb-a0x"/>
+                                            <constraint firstItem="r3Z-hZ-wg4" firstAttribute="trailing" secondItem="fr5-F2-9Tc" secondAttribute="trailing" id="i06-Uu-jom"/>
+                                            <constraint firstAttribute="height" constant="391" id="pPS-l1-YHw"/>
+                                            <constraint firstItem="r3Z-hZ-wg4" firstAttribute="leading" secondItem="fr5-F2-9Tc" secondAttribute="leading" constant="288" id="uI2-pR-wub"/>
+                                        </constraints>
+                                        <viewLayoutGuide key="contentLayoutGuide" id="l4A-CT-WRV"/>
+                                        <viewLayoutGuide key="frameLayoutGuide" id="fr5-F2-9Tc"/>
+                                    </scrollView>
+                                    <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="MMs-iW-DXw">
+                                        <rect key="frame" x="20" y="123" width="374" height="210"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <subviews>
+                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" editable="NO" text="In the first verse, which two body parts are mentioned?" textAlignment="center" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SOd-NY-Yip">
+                                                <rect key="frame" x="8" y="0.0" width="356" height="53"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <color key="backgroundColor" red="0.0" green="0.58980089430000004" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                            </textView>
+                                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Le deux parties du corps sont.." textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="kZO-dS-BRJ">
+                                                <rect key="frame" x="8" y="52" width="356" height="34"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <color key="backgroundColor" red="0.0" green="0.58980089430000004" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </textField>
+                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" editable="NO" text="When does the singer see life in pink?" textAlignment="center" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="f78-jn-BwP">
+                                                <rect key="frame" x="8" y="94" width="356" height="43"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <color key="backgroundColor" red="0.0" green="0.58980089430000004" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                            </textView>
+                                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Elle vois la vie en rose quand..." textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="uq4-oE-byc">
+                                                <rect key="frame" x="8" y="136" width="356" height="34"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <color key="backgroundColor" red="0.0" green="0.58980089430000004" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </textField>
+                                        </subviews>
+                                        <viewLayoutGuide key="contentLayoutGuide" id="03n-Ux-Rj9"/>
+                                        <viewLayoutGuide key="frameLayoutGuide" id="aQz-8u-2Xw"/>
+                                    </scrollView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Test your fluency with" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="blh-z1-2nw">
+                                        <rect key="frame" x="124" y="42" width="167" height="21"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="tintColor" red="0.91332883880000004" green="0.58758811909999997" blue="0.46531971900000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="S3S-Es-fRk">
+                                        <rect key="frame" x="143" y="769" width="129" height="30"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" title="Check my answers">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="La Mer" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qB1-ET-Bvv">
+                                        <rect key="frame" x="161" y="71" width="92" height="37"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="31"/>
+                                        <color key="textColor" systemColor="systemBackgroundColor"/>
+                                        <color key="highlightedColor" systemColor="systemBackgroundColor"/>
+                                    </label>
+                                </subviews>
+                                <viewLayoutGuide key="safeArea" id="6mt-MY-beL"/>
+                                <color key="backgroundColor" red="0.0" green="0.58980089430000004" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstItem="Nvb-UH-J8a" firstAttribute="bottom" secondItem="Bkq-0z-UhF" secondAttribute="bottomMargin" constant="-54" id="7rc-bg-qoW"/>
+                                    <constraint firstItem="Nvb-UH-J8a" firstAttribute="leading" secondItem="Bkq-0z-UhF" secondAttribute="leadingMargin" constant="20" id="Jue-mR-uDE"/>
+                                    <constraint firstItem="Nvb-UH-J8a" firstAttribute="trailing" secondItem="Bkq-0z-UhF" secondAttribute="trailingMargin" constant="-20" id="KHW-uz-eV0"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="9DG-qr-WHf"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="muk-Rn-bQA" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3114" y="-100"/>
+        </scene>
     </scenes>
     <resources>
         <image name="NicePng_flower-emoji-png_498606" width="463" height="663"/>
         <image name="PngItem_1299909" width="529" height="644"/>
-        <systemColor name="labelColor">
-            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
+        <image name="SeekPng.com_wave-emoji-png_1486235" width="572" height="480"/>
+        <image name="computer-icons-musical-note-music-download-musical-theatre-musical-note-a22a8a252c596f4d84f9e4af9d960178" width="512" height="512"/>
+        <image name="photographic-film-computer-icons-cinematographer-icon-movie-drawing-9db506dd42f14869c63a81a249a44eda" width="512" height="512"/>
+        <image name="plus-and-minus-signs-computer-icons-plus-minus-sign-positive-vector-65e5c1da2e6256d5aea409dd679fb6ba" width="768" height="768"/>
+        <image name="world-language-foreign-language-english-learn-more-2d14b84c04503213f6a221ca296bf60e-1" width="1280" height="382"/>
         <systemColor name="secondarySystemGroupedBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
@@ -621,6 +826,9 @@ La la la la</mutableString>
         </systemColor>
         <systemColor name="systemOrangeColor">
             <color red="1" green="0.58431372549019611" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemYellowColor">
+            <color red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>

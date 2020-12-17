@@ -1,0 +1,21 @@
+{
+  "images" : [
+    {
+      "filename" : "plus-and-minus-signs-computer-icons-plus-minus-sign-positive-vector-65e5c1da2e6256d5aea409dd679fb6ba.png",
+      "idiom" : "universal",
+      "scale" : "1x"
+    },
+    {
+      "idiom" : "universal",
+      "scale" : "2x"
+    },
+    {
+      "idiom" : "universal",
+      "scale" : "3x"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}

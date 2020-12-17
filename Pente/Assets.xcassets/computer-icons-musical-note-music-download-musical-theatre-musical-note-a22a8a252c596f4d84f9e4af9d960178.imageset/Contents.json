@@ -1,0 +1,21 @@
+{
+  "images" : [
+    {
+      "filename" : "computer-icons-musical-note-music-download-musical-theatre-musical-note-a22a8a252c596f4d84f9e4af9d960178.png",
+      "idiom" : "universal",
+      "scale" : "1x"
+    },
+    {
+      "idiom" : "universal",
+      "scale" : "2x"
+    },
+    {
+      "idiom" : "universal",
+      "scale" : "3x"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}
